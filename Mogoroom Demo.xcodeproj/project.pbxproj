@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D7481091F31748800FB2BE9 /* DemoCellAPI1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7481081F31748800FB2BE9 /* DemoCellAPI1.swift */; };
+		8DCDB1AB1F2F2C8300CEC7CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1AA1F2F2C8300CEC7CF /* AppDelegate.swift */; };
+		8DCDB1B01F2F2C8300CEC7CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1AE1F2F2C8300CEC7CF /* Main.storyboard */; };
+		8DCDB1B21F2F2C8300CEC7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1B11F2F2C8300CEC7CF /* Assets.xcassets */; };
+		8DCDB1B51F2F2C8300CEC7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1B31F2F2C8300CEC7CF /* LaunchScreen.storyboard */; };
+		8DCDB1E01F3022BE00CEC7CF /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1D81F3022BE00CEC7CF /* Dynamic.swift */; };
+		8DCDB1E11F3022BE00CEC7CF /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1D91F3022BE00CEC7CF /* CellViewModelProtocol.swift */; };
+		8DCDB1E21F3022BE00CEC7CF /* DemoCellViewModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1DA1F3022BE00CEC7CF /* DemoCellViewModel1.swift */; };
+		8DCDB1E41F3022BE00CEC7CF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1DD1F3022BE00CEC7CF /* HomeTableViewController.swift */; };
+		8DCDB1EA1F3027DD00CEC7CF /* DemoCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1E71F3027DD00CEC7CF /* DemoCell1.swift */; };
+		8DCDB1F01F302AB000CEC7CF /* DemoCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1EF1F302AB000CEC7CF /* DemoCell1.xib */; };
+		8DCDB1F21F30323C00CEC7CF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1F11F30323C00CEC7CF /* HomeViewModel.swift */; };
+		8DCDB1F41F30355500CEC7CF /* DemoCellModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1F31F30355500CEC7CF /* DemoCellModel1.swift */; };
+		FCDC1B04CEDD535BCE50C411 /* Pods_Mogoroom_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C13752E1CAE148AC78B03B7 /* Pods_Mogoroom_Demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C13752E1CAE148AC78B03B7 /* Pods_Mogoroom_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mogoroom_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE9273FA22B529AE090638D /* Pods-Mogoroom Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mogoroom Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mogoroom Demo/Pods-Mogoroom Demo.release.xcconfig"; sourceTree = "<group>"; };
+		8D7481081F31748800FB2BE9 /* DemoCellAPI1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCellAPI1.swift; sourceTree = "<group>"; };
+		8DCDB1A71F2F2C8300CEC7CF /* Mogoroom Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mogoroom Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCDB1AA1F2F2C8300CEC7CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DCDB1AF1F2F2C8300CEC7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DCDB1B11F2F2C8300CEC7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DCDB1B41F2F2C8300CEC7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DCDB1B61F2F2C8300CEC7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DCDB1D81F3022BE00CEC7CF /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		8DCDB1D91F3022BE00CEC7CF /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
+		8DCDB1DA1F3022BE00CEC7CF /* DemoCellViewModel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCellViewModel1.swift; sourceTree = "<group>"; };
+		8DCDB1DD1F3022BE00CEC7CF /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		8DCDB1E71F3027DD00CEC7CF /* DemoCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell1.swift; sourceTree = "<group>"; };
+		8DCDB1EF1F302AB000CEC7CF /* DemoCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCell1.xib; sourceTree = "<group>"; };
+		8DCDB1F11F30323C00CEC7CF /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8DCDB1F31F30355500CEC7CF /* DemoCellModel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCellModel1.swift; sourceTree = "<group>"; };
+		EC7D75EE8F64A347B6712491 /* Pods-Mogoroom Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mogoroom Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mogoroom Demo/Pods-Mogoroom Demo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DCDB1A41F2F2C8300CEC7CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDC1B04CEDD535BCE50C411 /* Pods_Mogoroom_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35B000E6BA4C981C456F956B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC7D75EE8F64A347B6712491 /* Pods-Mogoroom Demo.debug.xcconfig */,
+				5BE9273FA22B529AE090638D /* Pods-Mogoroom Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86055F6ABB7C7FBFA020FF41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C13752E1CAE148AC78B03B7 /* Pods_Mogoroom_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D7481071F31748800FB2BE9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8D7481081F31748800FB2BE9 /* DemoCellAPI1.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8DCDB19E1F2F2C8300CEC7CF = {
+			isa = PBXGroup;
+			children = (
+				8DCDB1A91F2F2C8300CEC7CF /* Mogoroom Demo */,
+				8DCDB1A81F2F2C8300CEC7CF /* Products */,
+				35B000E6BA4C981C456F956B /* Pods */,
+				86055F6ABB7C7FBFA020FF41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8DCDB1A81F2F2C8300CEC7CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDB1A71F2F2C8300CEC7CF /* Mogoroom Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DCDB1A91F2F2C8300CEC7CF /* Mogoroom Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8D7481071F31748800FB2BE9 /* API */,
+				8DCDB1D61F3022BE00CEC7CF /* Model */,
+				8DCDB1D71F3022BE00CEC7CF /* ViewModel */,
+				8DCDB1DB1F3022BE00CEC7CF /* Views */,
+				8DCDB1AA1F2F2C8300CEC7CF /* AppDelegate.swift */,
+				8DCDB1AE1F2F2C8300CEC7CF /* Main.storyboard */,
+				8DCDB1B11F2F2C8300CEC7CF /* Assets.xcassets */,
+				8DCDB1B31F2F2C8300CEC7CF /* LaunchScreen.storyboard */,
+				8DCDB1B61F2F2C8300CEC7CF /* Info.plist */,
+			);
+			path = "Mogoroom Demo";
+			sourceTree = "<group>";
+		};
+		8DCDB1D61F3022BE00CEC7CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDB1F31F30355500CEC7CF /* DemoCellModel1.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DCDB1D71F3022BE00CEC7CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDB1D81F3022BE00CEC7CF /* Dynamic.swift */,
+				8DCDB1D91F3022BE00CEC7CF /* CellViewModelProtocol.swift */,
+				8DCDB1DA1F3022BE00CEC7CF /* DemoCellViewModel1.swift */,
+				8DCDB1F11F30323C00CEC7CF /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8DCDB1DB1F3022BE00CEC7CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDB1E61F3027DD00CEC7CF /* DemoCell1 */,
+				8DCDB1DD1F3022BE00CEC7CF /* HomeTableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8DCDB1E61F3027DD00CEC7CF /* DemoCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDB1E71F3027DD00CEC7CF /* DemoCell1.swift */,
+				8DCDB1EF1F302AB000CEC7CF /* DemoCell1.xib */,
+			);
+			name = DemoCell1;
+			path = Cell1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DCDB1A61F2F2C8300CEC7CF /* Mogoroom Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DCDB1B91F2F2C8300CEC7CF /* Build configuration list for PBXNativeTarget "Mogoroom Demo" */;
+			buildPhases = (
+				1C4947973771B6A795704051 /* [CP] Check Pods Manifest.lock */,
+				8DCDB1A31F2F2C8300CEC7CF /* Sources */,
+				8DCDB1A41F2F2C8300CEC7CF /* Frameworks */,
+				8DCDB1A51F2F2C8300CEC7CF /* Resources */,
+				C9EED7759F72788646C9D95B /* [CP] Embed Pods Frameworks */,
+				63E9F73004280FECF87A1636 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mogoroom Demo";
+			productName = "Mogoroom Demo";
+			productReference = 8DCDB1A71F2F2C8300CEC7CF /* Mogoroom Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DCDB19F1F2F2C8300CEC7CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = muyexi;
+				TargetAttributes = {
+					8DCDB1A61F2F2C8300CEC7CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8DCDB1A21F2F2C8300CEC7CF /* Build configuration list for PBXProject "Mogoroom Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DCDB19E1F2F2C8300CEC7CF;
+			productRefGroup = 8DCDB1A81F2F2C8300CEC7CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DCDB1A61F2F2C8300CEC7CF /* Mogoroom Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DCDB1A51F2F2C8300CEC7CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCDB1B51F2F2C8300CEC7CF /* LaunchScreen.storyboard in Resources */,
+				8DCDB1B21F2F2C8300CEC7CF /* Assets.xcassets in Resources */,
+				8DCDB1B01F2F2C8300CEC7CF /* Main.storyboard in Resources */,
+				8DCDB1F01F302AB000CEC7CF /* DemoCell1.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C4947973771B6A795704051 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63E9F73004280FECF87A1636 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mogoroom Demo/Pods-Mogoroom Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9EED7759F72788646C9D95B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mogoroom Demo/Pods-Mogoroom Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DCDB1A31F2F2C8300CEC7CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCDB1E01F3022BE00CEC7CF /* Dynamic.swift in Sources */,
+				8DCDB1E11F3022BE00CEC7CF /* CellViewModelProtocol.swift in Sources */,
+				8D7481091F31748800FB2BE9 /* DemoCellAPI1.swift in Sources */,
+				8DCDB1E21F3022BE00CEC7CF /* DemoCellViewModel1.swift in Sources */,
+				8DCDB1E41F3022BE00CEC7CF /* HomeTableViewController.swift in Sources */,
+				8DCDB1F41F30355500CEC7CF /* DemoCellModel1.swift in Sources */,
+				8DCDB1AB1F2F2C8300CEC7CF /* AppDelegate.swift in Sources */,
+				8DCDB1EA1F3027DD00CEC7CF /* DemoCell1.swift in Sources */,
+				8DCDB1F21F30323C00CEC7CF /* HomeViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8DCDB1AE1F2F2C8300CEC7CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DCDB1AF1F2F2C8300CEC7CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DCDB1B31F2F2C8300CEC7CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DCDB1B41F2F2C8300CEC7CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DCDB1B71F2F2C8300CEC7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DCDB1B81F2F2C8300CEC7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DCDB1BA1F2F2C8300CEC7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7D75EE8F64A347B6712491 /* Pods-Mogoroom Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Mogoroom Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.muyexi.Mogoroom-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8DCDB1BB1F2F2C8300CEC7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE9273FA22B529AE090638D /* Pods-Mogoroom Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Mogoroom Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.muyexi.Mogoroom-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DCDB1A21F2F2C8300CEC7CF /* Build configuration list for PBXProject "Mogoroom Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DCDB1B71F2F2C8300CEC7CF /* Debug */,
+				8DCDB1B81F2F2C8300CEC7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DCDB1B91F2F2C8300CEC7CF /* Build configuration list for PBXNativeTarget "Mogoroom Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DCDB1BA1F2F2C8300CEC7CF /* Debug */,
+				8DCDB1BB1F2F2C8300CEC7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DCDB19F1F2F2C8300CEC7CF /* Project object */;
+}
