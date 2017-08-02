@@ -12,7 +12,6 @@
 		8DCDB1B01F2F2C8300CEC7CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1AE1F2F2C8300CEC7CF /* Main.storyboard */; };
 		8DCDB1B21F2F2C8300CEC7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1B11F2F2C8300CEC7CF /* Assets.xcassets */; };
 		8DCDB1B51F2F2C8300CEC7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1B31F2F2C8300CEC7CF /* LaunchScreen.storyboard */; };
-		8DCDB1E01F3022BE00CEC7CF /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1D81F3022BE00CEC7CF /* Dynamic.swift */; };
 		8DCDB1E11F3022BE00CEC7CF /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1D91F3022BE00CEC7CF /* CellViewModelProtocol.swift */; };
 		8DCDB1E21F3022BE00CEC7CF /* DemoCellViewModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1DA1F3022BE00CEC7CF /* DemoCellViewModel1.swift */; };
 		8DCDB1E41F3022BE00CEC7CF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1DD1F3022BE00CEC7CF /* HomeTableViewController.swift */; };
@@ -33,7 +32,6 @@
 		8DCDB1B11F2F2C8300CEC7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DCDB1B41F2F2C8300CEC7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DCDB1B61F2F2C8300CEC7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DCDB1D81F3022BE00CEC7CF /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		8DCDB1D91F3022BE00CEC7CF /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
 		8DCDB1DA1F3022BE00CEC7CF /* DemoCellViewModel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCellViewModel1.swift; sourceTree = "<group>"; };
 		8DCDB1DD1F3022BE00CEC7CF /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 		8DCDB1D71F3022BE00CEC7CF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8DCDB1D81F3022BE00CEC7CF /* Dynamic.swift */,
 				8DCDB1D91F3022BE00CEC7CF /* CellViewModelProtocol.swift */,
 				8DCDB1DA1F3022BE00CEC7CF /* DemoCellViewModel1.swift */,
 				8DCDB1F11F30323C00CEC7CF /* HomeViewModel.swift */,
@@ -277,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DCDB1E01F3022BE00CEC7CF /* Dynamic.swift in Sources */,
 				8DCDB1E11F3022BE00CEC7CF /* CellViewModelProtocol.swift in Sources */,
 				8D7481091F31748800FB2BE9 /* DemoCellAPI1.swift in Sources */,
 				8DCDB1E21F3022BE00CEC7CF /* DemoCellViewModel1.swift in Sources */,
