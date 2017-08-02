@@ -1,35 +1,28 @@
 import Foundation
-
-public typealias SuccessHandler = ((Any) -> ())
-public typealias FailureHandler = (() -> ())
+import ReactiveSwift
 
 protocol APIProtocol {
-    var state: Dynamic<LoadingState> { get }
+    var state: MutableProperty<LoadingState> { get }
     
-    var failureHandler: FailureHandler? { get set }
-    var successHandler: SuccessHandler? { get set }
+    var model: Any? { get set }
     
     func request()
 }
 
 class DemoCellAPI1: APIProtocol {
-    var state: Dynamic<LoadingState> = Dynamic(.loading)
+    var state: MutableProperty<LoadingState> = MutableProperty(.loading)
     
-    var failureHandler: FailureHandler?
-    
-    var successHandler: SuccessHandler?
+    var model: Any?
     
     func request() {
         delay(3) {
-            self.state.value = self.randomState()
+            let state = self.randomState()
             
-            if self.state.value == .success {
-                let model = DemoCellModel1(title: LoadingState.success.rawValue)
-                
-                self.successHandler?(model)
-            } else {
-                self.failureHandler?()
+            if state == .success {
+                self.model = DemoCellModel1(title: LoadingState.success.rawValue)
             }
+            
+            self.state.value = state
         }
     }
     

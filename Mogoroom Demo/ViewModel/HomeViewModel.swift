@@ -1,4 +1,5 @@
 import Foundation
+import ReactiveSwift
 
 protocol HomeViewModelProtocol {
     var cellViewModels: [CellViewModelProtocol] { get }
@@ -15,15 +16,21 @@ class HomeViewModel: NSObject, HomeViewModelProtocol {
         DemoCellViewModel1()
     ]
     
-    var refreshTableViewRow: ((Int) -> ())?
+    var updatedRow: MutableProperty<Int> = MutableProperty(0)
+    
+    override init() {
+        super.init()
+        
+        for (row, viewModel) in cellViewModels.enumerated() {
+            viewModel.api.state.signal.observeValues({ (state) in
+                self.updatedRow.value = row
+            })
+        }
+    }
     
     func loadData() {
-        for (row, viewModel) in cellViewModels.enumerated() {
+        for viewModel in cellViewModels {
             viewModel.loadData()
-            
-            viewModel.api.state.bind({ (state) in
-                self.refreshTableViewRow!(row)
-            })
         }
     }
     

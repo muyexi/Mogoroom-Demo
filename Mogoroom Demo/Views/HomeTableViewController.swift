@@ -7,14 +7,22 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.loadData()
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
         
-        viewModel.refreshTableViewRow = { (row) in
+        viewModel.loadData()
+        viewModel.updatedRow.signal.observeValues { (row) in
             self.tableView.reloadData()
         }
     }
+    
+    func refresh() {
+        viewModel.loadData()
+        refreshControl?.endRefreshing()
+    }
 }
 
+// MARK: UITableViewDataSource
 extension HomeTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,10 +35,15 @@ extension HomeTableViewController {
     
 }
 
+// MARK: UITableViewDelegate
 extension HomeTableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return viewModel.cellViewModels[indexPath.row].rowHeight
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }

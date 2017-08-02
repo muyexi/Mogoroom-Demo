@@ -13,14 +13,14 @@ class DemoCellViewModel1: NSObject, CellViewModelProtocol {
         successCell = Bundle.main.loadNibNamed(id, owner: self, options: nil)!.first as? DemoCell1
         successCell.titleLabel.text = LoadingState.loading.rawValue
         
-        api.successHandler = { obj in
-            if let model = obj as? DemoCellModel1 {
-                self.successCell.textLabel?.text = model.title
+        api.state.signal.observeValues { (state) in
+            if state == .success {
+                if self.api.model != nil {
+                    self.successCell.setup(obj: self.api.model!)
+                }
+            } else if state == .failure {
+                self.successCell.titleLabel?.text = LoadingState.failure.rawValue
             }
-        }
-        
-        api.failureHandler = {
-            self.successCell.textLabel?.text = LoadingState.failure.rawValue
         }
     }
     
@@ -32,6 +32,7 @@ class DemoCellViewModel1: NSObject, CellViewModelProtocol {
     }
     
     func loadData() {
+        successCell.titleLabel.text = LoadingState.loading.rawValue
         self.api.request()
     }
     

@@ -10,7 +10,7 @@ class DemoCell1: UITableViewCell, HomeCellProtocol {
     
     func setup(obj: Any) {
         if let model = obj as? DemoCellModel1 {
-            textLabel?.text = model.title
+            titleLabel?.text = model.title
         }
     }
     
