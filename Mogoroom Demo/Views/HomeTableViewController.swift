@@ -4,20 +4,40 @@ class HomeTableViewController: UITableViewController {
     
     var viewModel: HomeViewModel = HomeViewModel()
     
+    lazy var cells: [HomeCellProtocol] = {
+        var cells: [HomeCellProtocol] = []
+        
+        for _ in 0..<5 {
+            let id = String(describing: DemoCell1.self)
+            let cell = Bundle.main.loadNibNamed(id, owner: self, options: nil)!.first as! DemoCell1
+            
+            cell.viewModel.api.state.signal.observeValues({ (state) in
+                self.tableView.reloadData()
+            })
+            
+            cells.append(cell)
+        }
+        
+        return cells
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
         
-        viewModel.loadData()
-        viewModel.updatedRow.signal.observeValues { (row) in
-            self.tableView.reloadData()
+        loadData()
+    }
+    
+    func loadData() {
+        for cell in cells {
+            cell.viewModel.loadData()
         }
     }
     
     func refresh() {
-        viewModel.loadData()
+        loadData()
         refreshControl?.endRefreshing()
     }
 }
@@ -26,11 +46,11 @@ class HomeTableViewController: UITableViewController {
 extension HomeTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.cellViewModels.count
+        return cells.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return viewModel.cellViewModels[indexPath.row].currentCell(tableView, indexPath:indexPath)
+        return cells[indexPath.row] as! UITableViewCell
     }
     
 }
@@ -39,7 +59,7 @@ extension HomeTableViewController {
 extension HomeTableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return viewModel.cellViewModels[indexPath.row].rowHeight
+        return cells[indexPath.row].height
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

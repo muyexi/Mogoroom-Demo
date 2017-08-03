@@ -9,19 +9,7 @@ enum LoadingState: String {
 protocol CellViewModelProtocol {
 
     var api: APIProtocol { get }
-
-    var rowHeight: CGFloat { get }
-    
-    func currentCell(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell
     
     func loadData()
 
-}
-
-extension CellViewModelProtocol {
-    
-    var rowHeight: CGFloat {
-        return 80
-    }
-    
 }

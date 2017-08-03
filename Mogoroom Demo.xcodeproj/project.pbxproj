@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D653C8D1F32E52800734030 /* DemoCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D653C8B1F32E52800734030 /* DemoCell1.swift */; };
+		8D653C8E1F32E52800734030 /* DemoCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D653C8C1F32E52800734030 /* DemoCell1.xib */; };
 		8D7481091F31748800FB2BE9 /* DemoCellAPI1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7481081F31748800FB2BE9 /* DemoCellAPI1.swift */; };
+		8DB50A5B1F32E49D00014309 /* DemoCellViewModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB50A5A1F32E49D00014309 /* DemoCellViewModel1.swift */; };
 		8DCDB1AB1F2F2C8300CEC7CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1AA1F2F2C8300CEC7CF /* AppDelegate.swift */; };
 		8DCDB1B01F2F2C8300CEC7CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1AE1F2F2C8300CEC7CF /* Main.storyboard */; };
 		8DCDB1B21F2F2C8300CEC7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1B11F2F2C8300CEC7CF /* Assets.xcassets */; };
 		8DCDB1B51F2F2C8300CEC7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1B31F2F2C8300CEC7CF /* LaunchScreen.storyboard */; };
 		8DCDB1E11F3022BE00CEC7CF /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1D91F3022BE00CEC7CF /* CellViewModelProtocol.swift */; };
-		8DCDB1E21F3022BE00CEC7CF /* DemoCellViewModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1DA1F3022BE00CEC7CF /* DemoCellViewModel1.swift */; };
 		8DCDB1E41F3022BE00CEC7CF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1DD1F3022BE00CEC7CF /* HomeTableViewController.swift */; };
-		8DCDB1EA1F3027DD00CEC7CF /* DemoCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1E71F3027DD00CEC7CF /* DemoCell1.swift */; };
-		8DCDB1F01F302AB000CEC7CF /* DemoCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDB1EF1F302AB000CEC7CF /* DemoCell1.xib */; };
 		8DCDB1F21F30323C00CEC7CF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1F11F30323C00CEC7CF /* HomeViewModel.swift */; };
 		8DCDB1F41F30355500CEC7CF /* DemoCellModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDB1F31F30355500CEC7CF /* DemoCellModel1.swift */; };
 		FCDC1B04CEDD535BCE50C411 /* Pods_Mogoroom_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C13752E1CAE148AC78B03B7 /* Pods_Mogoroom_Demo.framework */; };
@@ -25,7 +25,10 @@
 /* Begin PBXFileReference section */
 		1C13752E1CAE148AC78B03B7 /* Pods_Mogoroom_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mogoroom_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE9273FA22B529AE090638D /* Pods-Mogoroom Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mogoroom Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mogoroom Demo/Pods-Mogoroom Demo.release.xcconfig"; sourceTree = "<group>"; };
+		8D653C8B1F32E52800734030 /* DemoCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell1.swift; sourceTree = "<group>"; };
+		8D653C8C1F32E52800734030 /* DemoCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCell1.xib; sourceTree = "<group>"; };
 		8D7481081F31748800FB2BE9 /* DemoCellAPI1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCellAPI1.swift; sourceTree = "<group>"; };
+		8DB50A5A1F32E49D00014309 /* DemoCellViewModel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCellViewModel1.swift; sourceTree = "<group>"; };
 		8DCDB1A71F2F2C8300CEC7CF /* Mogoroom Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mogoroom Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DCDB1AA1F2F2C8300CEC7CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DCDB1AF1F2F2C8300CEC7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,10 +36,7 @@
 		8DCDB1B41F2F2C8300CEC7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DCDB1B61F2F2C8300CEC7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DCDB1D91F3022BE00CEC7CF /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
-		8DCDB1DA1F3022BE00CEC7CF /* DemoCellViewModel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCellViewModel1.swift; sourceTree = "<group>"; };
 		8DCDB1DD1F3022BE00CEC7CF /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		8DCDB1E71F3027DD00CEC7CF /* DemoCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell1.swift; sourceTree = "<group>"; };
-		8DCDB1EF1F302AB000CEC7CF /* DemoCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCell1.xib; sourceTree = "<group>"; };
 		8DCDB1F11F30323C00CEC7CF /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8DCDB1F31F30355500CEC7CF /* DemoCellModel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCellModel1.swift; sourceTree = "<group>"; };
 		EC7D75EE8F64A347B6712491 /* Pods-Mogoroom Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mogoroom Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mogoroom Demo/Pods-Mogoroom Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +69,15 @@
 				1C13752E1CAE148AC78B03B7 /* Pods_Mogoroom_Demo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D653C8A1F32E52800734030 /* DemoCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				8D653C8B1F32E52800734030 /* DemoCell1.swift */,
+				8D653C8C1F32E52800734030 /* DemoCell1.xib */,
+			);
+			path = DemoCell1;
 			sourceTree = "<group>";
 		};
 		8D7481071F31748800FB2BE9 /* API */ = {
@@ -124,8 +133,8 @@
 		8DCDB1D71F3022BE00CEC7CF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8DB50A5A1F32E49D00014309 /* DemoCellViewModel1.swift */,
 				8DCDB1D91F3022BE00CEC7CF /* CellViewModelProtocol.swift */,
-				8DCDB1DA1F3022BE00CEC7CF /* DemoCellViewModel1.swift */,
 				8DCDB1F11F30323C00CEC7CF /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
@@ -134,20 +143,10 @@
 		8DCDB1DB1F3022BE00CEC7CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8DCDB1E61F3027DD00CEC7CF /* DemoCell1 */,
+				8D653C8A1F32E52800734030 /* DemoCell1 */,
 				8DCDB1DD1F3022BE00CEC7CF /* HomeTableViewController.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		8DCDB1E61F3027DD00CEC7CF /* DemoCell1 */ = {
-			isa = PBXGroup;
-			children = (
-				8DCDB1E71F3027DD00CEC7CF /* DemoCell1.swift */,
-				8DCDB1EF1F302AB000CEC7CF /* DemoCell1.xib */,
-			);
-			name = DemoCell1;
-			path = Cell1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,10 +211,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D653C8E1F32E52800734030 /* DemoCell1.xib in Resources */,
 				8DCDB1B51F2F2C8300CEC7CF /* LaunchScreen.storyboard in Resources */,
 				8DCDB1B21F2F2C8300CEC7CF /* Assets.xcassets in Resources */,
 				8DCDB1B01F2F2C8300CEC7CF /* Main.storyboard in Resources */,
-				8DCDB1F01F302AB000CEC7CF /* DemoCell1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +275,12 @@
 			files = (
 				8DCDB1E11F3022BE00CEC7CF /* CellViewModelProtocol.swift in Sources */,
 				8D7481091F31748800FB2BE9 /* DemoCellAPI1.swift in Sources */,
-				8DCDB1E21F3022BE00CEC7CF /* DemoCellViewModel1.swift in Sources */,
 				8DCDB1E41F3022BE00CEC7CF /* HomeTableViewController.swift in Sources */,
+				8DB50A5B1F32E49D00014309 /* DemoCellViewModel1.swift in Sources */,
 				8DCDB1F41F30355500CEC7CF /* DemoCellModel1.swift in Sources */,
 				8DCDB1AB1F2F2C8300CEC7CF /* AppDelegate.swift in Sources */,
-				8DCDB1EA1F3027DD00CEC7CF /* DemoCell1.swift in Sources */,
 				8DCDB1F21F30323C00CEC7CF /* HomeViewModel.swift in Sources */,
+				8D653C8D1F32E52800734030 /* DemoCell1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

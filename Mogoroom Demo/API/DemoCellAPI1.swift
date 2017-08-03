@@ -10,11 +10,13 @@ protocol APIProtocol {
 }
 
 class DemoCellAPI1: APIProtocol {
-    var state: MutableProperty<LoadingState> = MutableProperty(.loading)
+    let state: MutableProperty<LoadingState> = MutableProperty(.loading)
     
     var model: Any?
     
     func request() {
+        state.value = .loading
+        
         delay(3) {
             let state = self.randomState()
             
